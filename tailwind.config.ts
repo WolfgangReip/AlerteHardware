@@ -18,6 +18,9 @@ const config: Config = {
                 'cyan-qui-pète-sa-mère': ' #07eaf8 ',
             },
         },
+        fontFamily: {
+            title: 'var(--font-Title)',
+        },
     },
     plugins: [],
 };
