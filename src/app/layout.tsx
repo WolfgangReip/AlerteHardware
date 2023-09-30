@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
     return (
         <html className={`${inter.className} ${bebas.variable} `} lang='en'>
-            <body className='min-h-screen'>{children}</body>
+            <body className='max-h-screen ml-16 mr-16'>{children}</body>
         </html>
     );
 }

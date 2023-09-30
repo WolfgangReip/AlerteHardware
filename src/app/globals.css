@@ -70,17 +70,40 @@ body {
   position: relative;
 }
 
+.link-color-1 {
+  --color: #07eaf8;
+}
+
+.link-color-2 {
+  --color:#b207f8 
+}
+
+.link-color-3 {
+  --color: #ed091c
+}
+
+.link-color-4 {
+  --color: #eda80e
+}
+
+
 .underline-hover-effect::before {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 0;
+  width: 20px;
   height: 4px;
-  background-image: linear-gradient(to right, #b207f8, #07eaf8);
+  background-color: var(--color);
   transition: width 0.25s ease-out;
 }
 
 .underline-hover-effect:hover::before {
   width: 100%;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #07eaf8 0%, #b207f8 33%, #ed091c 66%, #edde09 100%);
+  background-clip: text;
+  color: transparent;
 }
