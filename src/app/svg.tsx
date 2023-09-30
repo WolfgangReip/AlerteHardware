@@ -8,7 +8,7 @@ export default function MonSVG({ width, height, style }: MonSVGProps) {
     return (
         <svg width={width} height={height} style={style} viewBox='0 0 512 509'>
             <linearGradient id='monDegradé' x1='0%' y1='0%' x2='100%' y2='100%'>
-                <stop offset='10%' stopColor-='#07eaf8' />
+                <stop offset='10%' stopColor='#07eaf8' />
                 <stop offset='33%' stopColor='#b207f8' />
                 <stop offset='66%' stopColor='#ed091c' />
                 <stop offset='90%' stopColor='#edde09' />

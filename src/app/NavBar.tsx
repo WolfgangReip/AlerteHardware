@@ -15,7 +15,7 @@ export default function NavBar() {
                 </Link>
                 <Link href='/mes-configs'>
                     <div className='underline-hover-effect link-color-2'>
-                        Mes Configs
+                        Nos Configs
                     </div>
                 </Link>
                 <Link href='/bons-plans'>
