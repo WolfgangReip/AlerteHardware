@@ -1,7 +1,7 @@
 'use client';
 import Head from 'next/head';
-import NavBar from './NavBar';
-import MonSVG from './svg';
+import NavBar from './components/NavBar';
+import MonSVG from './components/Svg';
 
 export default function Home() {
     return (
@@ -16,7 +16,7 @@ export default function Home() {
             <NavBar />
             <main className='flex flex-col justify-center min-h-screen pt-20'>
                 <div className='flex items-center justify-evenly space-x-18'>
-                    <h1 className='text-9xl font-title animate-slideIn'>
+                    <h1 className='text-9xl font-title'>
                         <span className='text-white block'>ALERTES</span>
                         <span className='gradient-text block'>HARDWARE</span>
                     </h1>
