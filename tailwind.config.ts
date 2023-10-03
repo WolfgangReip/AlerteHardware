@@ -10,7 +10,8 @@ const config: Config = {
         extend: {
             colors: {
                 'joli-mauve': '#b207f8',
-                'cyan-qui-pète-sa-mère': ' #07eaf8 ',
+                'cyan-qui-pète-sa-mère': '#07eaf8',
+                'card-background-color': '#242526',
             },
             backgroundImage: (theme) => ({
                 'custom-gradient':
