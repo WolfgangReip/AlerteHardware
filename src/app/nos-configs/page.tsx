@@ -25,7 +25,7 @@ export default function NosConfigs() {
         {
             id: '2',
             name: 'Configuration 2',
-            description: 'Quand performance rime avec raison',
+            description: 'Quand performance rime avec raison!',
             price: 800,
             components: [
                 { id: '1', name: 'test1' },
@@ -35,7 +35,7 @@ export default function NosConfigs() {
         {
             id: '3',
             name: 'Configuration 3',
-            description: 'Description de la configuration 3',
+            description: "Mille raisons d'être impressionné!",
             price: 1000,
             components: [
                 { id: '1', name: 'test1' },

@@ -4,7 +4,7 @@ import MonSVG from './Svg';
 
 export default function NavBar() {
     return (
-        <header className='draw flex items-center justify-between p-6 pr-32 text-xl text-white fixed w-full top-0 left-0 secondary-font h-20'>
+        <header className='draw flex items-center justify-between p-6 pr-32 text-xl text-white fixed w-full top-0 left-0 font-tertiary h-20'>
             <MonSVG width={53.61} height={53.33} style={{ marginLeft: '7%' }} />
             <nav>
                 <div className='flex space-x-8'>

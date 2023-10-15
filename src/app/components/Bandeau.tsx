@@ -16,7 +16,7 @@ export default function Bandeau({
             <h1 className='text-center font-title pt-6 text-6xl after:block after:mx-auto after:w-16 after:pt-3 after:border-b-4 after:rounded after:border-white'>
                 {titre}
             </h1>
-            <p className='text-center secondary-font text-2xl mt-6'>
+            <p className='text-center font-tertiary text-2xl mt-6'>
                 {description}
             </p>
         </div>

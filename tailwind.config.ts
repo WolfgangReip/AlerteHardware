@@ -21,6 +21,7 @@ const config: Config = {
         fontFamily: {
             title: 'var(--font-Title)',
             secondary: 'var(--secondary-font)',
+            tertiary: 'var(--tertiary-Title)',
         },
     },
     plugins: [],

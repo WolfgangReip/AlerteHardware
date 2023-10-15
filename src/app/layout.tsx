@@ -1,6 +1,6 @@
 import './styles/globals.css';
 import type { Metadata } from 'next';
-import { Bebas_Neue, Josefin_Sans, Inter } from 'next/font/google';
+import { Bebas_Neue, Josefin_Sans, Inter, Raleway } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -11,9 +11,10 @@ const bebas = Bebas_Neue({
     subsets: ['latin'],
 });
 
-const josefin = Josefin_Sans({
+const raleway = Raleway({
     weight: ['700'],
-    variable: '--secondary-font',
+    style: ['italic'],
+    variable: '--tertiary-Title',
     fallback: ['Helvetica', 'sans-serif'],
     subsets: ['latin'],
 });
@@ -30,7 +31,7 @@ export default function RootLayout({
 }) {
     return (
         <html
-            className={`${inter.className} ${bebas.variable} ${josefin.className}`}
+            className={`${inter.className} ${bebas.variable} ${raleway.variable}`}
             lang='en'>
             <body className='max-h-screen'>{children}</body>
         </html>
