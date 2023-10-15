@@ -1,22 +1,32 @@
-export const configuration = {
-  name: "configuration",
+import { defineType, defineField, defineArrayMember } from "sanity";
+
+const configuration = defineType({
+  title: "Configuration",
+  name: "configuratione",
   type: "document",
   fields: [
-    {
+    defineField({
+      title: "Prix de la configuration",
       name: "prix",
       type: "string",
-      title: "Prix de la Configuration",
-    },
-    {
+    }),
+    defineField({
+      title: "Slogan",
       name: "slogan",
       type: "string",
-      title: "Slogan",
-    },
-    {
+    }),
+    defineField({
+      title: "Liste des composants",
       name: "composants",
       type: "array",
-      of: [{ type: "reference", to: [{ type: "composant" }] }],
-      title: "Liste des Composants",
-    },
+      of: [
+        defineArrayMember({
+          type: "reference",
+          to: [{ type: "composant" }],
+        }),
+      ],
+    }),
   ],
-};
+});
+
+export default configuration;

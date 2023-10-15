@@ -1,3 +1,4 @@
-import { configuration } from "./configuration";
+import configuration from "./configuration";
+import composant from "./composant";
 
-export const schemaTypes = [configuration];
+export const schemaTypes = [configuration, composant];
