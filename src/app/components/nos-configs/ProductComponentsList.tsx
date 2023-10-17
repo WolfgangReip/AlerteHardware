@@ -10,7 +10,7 @@ const ProductComponentsList: React.FC<ProductComponentsListProps> = ({
 }) => (
     <ul>
         {components.map((comp) => (
-            <li key={comp.id} className='my-1'>
+            <li key={comp._id} className='my-1'>
                 {comp.name}
             </li>
         ))}
