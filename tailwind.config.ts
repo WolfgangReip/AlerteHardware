@@ -19,9 +19,9 @@ const config: Config = {
             }),
         },
         fontFamily: {
-            title: 'var(--font-Title)',
+            primary: 'var(--primary-font)',
             secondary: 'var(--secondary-font)',
-            tertiary: 'var(--tertiary-Title)',
+            tertiary: 'var(--tertiary-font)',
         },
     },
     plugins: [],

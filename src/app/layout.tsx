@@ -1,23 +1,6 @@
 import './styles/globals.css';
 import type { Metadata } from 'next';
-import { Bebas_Neue, Josefin_Sans, Inter, Raleway } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
-
-const bebas = Bebas_Neue({
-    weight: ['400'],
-    variable: '--font-Title',
-    fallback: ['Helvetica', 'sans-serif'],
-    subsets: ['latin'],
-});
-
-const raleway = Raleway({
-    weight: ['700'],
-    style: ['italic'],
-    variable: '--tertiary-Title',
-    fallback: ['Helvetica', 'sans-serif'],
-    subsets: ['latin'],
-});
+import { montserrat } from '@/fonts';
 
 export const metadata: Metadata = {
     title: 'Alerte Hardware',
@@ -30,9 +13,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html
-            className={`${inter.className} ${bebas.variable} ${raleway.variable}`}
-            lang='en'>
+        <html className={`${montserrat.variable} font-primary`} lang='en'>
             <body className='max-h-screen'>{children}</body>
         </html>
     );
