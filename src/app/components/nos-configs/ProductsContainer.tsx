@@ -1,16 +1,19 @@
-import { Product } from './types';
-import ProductCard from './ProductCard';
+import React, { FC, ReactElement } from "react";
+import { Configuration } from "./types";
+import ProductCard from "./ProductCard";
 
 interface ProductsContainerProps {
-    products: Product[];
+  products: Configuration[];
 }
 
-const ProductsContainer: React.FC<ProductsContainerProps> = ({ products }) => (
-    <div className='flex flex-wrap justify-center mt-14'>
-        {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-        ))}
-    </div>
+const ProductsContainer: FC<ProductsContainerProps> = ({
+  products,
+}): ReactElement => (
+  <div className="flex flex-wrap justify-center mt-14">
+    {products.map((product) => (
+      <ProductCard key={product._id} product={product} />
+    ))}
+  </div>
 );
 
 export default ProductsContainer;

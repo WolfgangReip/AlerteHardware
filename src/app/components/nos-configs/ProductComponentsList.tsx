@@ -1,20 +1,20 @@
 // ProductComponentsList.tsx
-import { Component } from './types';
+import { ComposantDetails } from "./types";
 
 interface ProductComponentsListProps {
-    components: Component[];
+  components: ComposantDetails[];
 }
 
 const ProductComponentsList: React.FC<ProductComponentsListProps> = ({
-    components,
+  components,
 }) => (
-    <ul>
-        {components.map((comp) => (
-            <li key={comp._id} className='my-1'>
-                {comp.name}
-            </li>
-        ))}
-    </ul>
+  <ul>
+    {components.map((comp) => (
+      <li key={comp.composant_reference._id} className="my-1">
+        {comp.composant_reference.nom}
+      </li>
+    ))}
+  </ul>
 );
 
 export default ProductComponentsList;
