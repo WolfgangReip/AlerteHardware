@@ -8,6 +8,7 @@ export interface ComposantDetails {
   composant_reference: ComposantReference;
   prix: string;
   url: string;
+  nom: string;
 }
 
 export interface Configuration {

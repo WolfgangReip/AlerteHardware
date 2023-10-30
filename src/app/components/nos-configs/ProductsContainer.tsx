@@ -10,9 +10,11 @@ const ProductsContainer: FC<ProductsContainerProps> = ({
   products,
 }): ReactElement => (
   <div className="flex flex-wrap justify-center mt-14">
-    {products.map((product) => (
-      <ProductCard key={product._id} product={product} />
-    ))}
+    {products &&
+      products.length > 0 &&
+      products.map((product) => (
+        <ProductCard key={product._id} product={product} />
+      ))}
   </div>
 );
 

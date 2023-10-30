@@ -28,10 +28,13 @@ const NosConfigs: FC = (): ReactElement => {
             icon,
           },
           prix,
-          url
+          url,
+          nom
         }
       }`);
-      setProducts(fetchedProducts);
+      if (fetchedProducts !== null) {
+        setProducts(fetchedProducts);
+      }
     };
 
     fetchProducts();
